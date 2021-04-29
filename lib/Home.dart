@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
+
 }
 
 class _HomeState extends State<Home> {
@@ -69,7 +70,7 @@ setState(() {
               Padding(
                 padding: EdgeInsets.only(top: 15),
                 child: TextField(
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.numberWithOptions(signed: true, decimal: true),
                   decoration: InputDecoration(
                       labelText: "Valor do litro do álcool"
                   ),
@@ -84,7 +85,7 @@ setState(() {
               Padding(
                 padding: EdgeInsets.only(top: 15),
                 child: TextField(
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.numberWithOptions(signed: true, decimal: true),
                   decoration: InputDecoration(
                       labelText: "Valor do litro da gasolina"
                   ),
